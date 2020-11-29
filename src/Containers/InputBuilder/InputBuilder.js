@@ -12,7 +12,7 @@ class inputBuilder extends Component{
 
     valueChangedHandler = (event)=>{
         this.setState({cityValue: event.target.value})
-        console.log(event.target.value)
+        
     }
 
 
