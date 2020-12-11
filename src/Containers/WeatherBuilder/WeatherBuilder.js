@@ -47,7 +47,7 @@ class weatherBuilder extends Component{
                 this.setState({cityValue: this.props.cityValue})
 
 
-                const res = await axios.get( `http://api.openweathermap.org/data/2.5/weather?q=${this.props.cityValue}&appid=0cb48c4c4c12fdb81f6029146f593f0a`)
+                const res = await axios.get( `https://api.openweathermap.org/data/2.5/weather?q=${this.props.cityValue}&appid=0cb48c4c4c12fdb81f6029146f593f0a`)
 
                 const id = res.data.id
                 const city = res.data.name
@@ -70,7 +70,7 @@ class weatherBuilder extends Component{
                 }
                 console.log(res)     
 
-                const icon = `http://openweathermap.org/img/wn/${res.data.weather[0].icon}.png`;
+                const icon = `https://openweathermap.org/img/wn/${res.data.weather[0].icon}.png`;
 
 
                 this.setState({id:id})
